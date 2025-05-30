@@ -10,7 +10,7 @@ def get_bot_response(user_input):
     elif 'time' in text:
         from datetime import datetime
         return f"The current time is {datetime.now().strftime('%H:%M:%S')}."
-    elif 'thank' in text:
+    elif 'current thank' in text:
         return "You're welcome! I'm here to help."
     elif any(bye in text for bye in ['bye', 'goodbye', 'exit', 'quit']):
         return "Goodbye! Have a great day!"
