@@ -7,7 +7,7 @@ def get_bot_response(user_input):
         return "I'm a simple chatbot created with Python."
     elif 'how are you' in text:
         return "I'm just code, but I'm doing well! Thanks for asking."
-    elif 'time' in text:
+    elif 'time' in text or 'what time' in text or 'current time' in text:
         from datetime import datetime
         return f"The current time is {datetime.now().strftime('%H:%M:%S')}."
     elif 'current thank' in text:
